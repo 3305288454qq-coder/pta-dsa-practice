@@ -1,0 +1,14 @@
+# Build outputs
+*.exe
+*.out
+*.o
+*.obj
+
+# Logs
+*.log
+
+# Local editor/runtime noise
+.agents/
+.codex/
+
+# Keep source, notes, templates, and VS Code tasks/settings tracked.
