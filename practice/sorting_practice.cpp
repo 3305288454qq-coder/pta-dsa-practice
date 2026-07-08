@@ -21,6 +21,20 @@ void BubbleSortAsc(int a[], int n)
        Write bubble sort here.
        Goal: sort from small to large.
     */
+
+    for ( int i = 0; i < n - 1; i++ )
+    {
+
+        for ( int j = 0; j < n - 1 - i; j++ )
+        {
+            if ( a[j] > a[j + 1] )
+            {
+                int temp = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = temp;
+            }
+        }
+    }
 }
 
 void SelectionSortDesc(int a[], int n)
@@ -30,6 +44,23 @@ void SelectionSortDesc(int a[], int n)
        Write selection sort here.
        Goal: sort from large to small.
     */
+
+    for ( int i = 0; i < n; i++ )
+    {
+        int maxIndex = i;
+
+        for ( int j = i + 1; j < n; j++ )
+        {
+            if ( a[j] > a[maxIndex] )
+            {
+                maxIndex = j;
+            }
+        }
+
+        int temp = a[i];
+        a[i] = a[maxIndex];
+        a[maxIndex] = temp;
+    }
 }
 
 int CmpDesc(const void *a, const void *b)
@@ -39,6 +70,20 @@ int CmpDesc(const void *a, const void *b)
        Write qsort compare function here.
        Goal: sort int values from large to small.
     */
+
+    int x = *(const int *)a;
+    int y = *(const int *)b;
+    
+    if (x < y)
+    {
+        return 1;
+    }
+
+    if (x > y)
+    {
+        return -1;
+    }
+    
     return 0;
 }
 
