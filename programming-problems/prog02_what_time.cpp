@@ -27,6 +27,7 @@ int main()
     int result_minute = result_total_minutes % 60;
 
     cout << result_hour;
+    
     if (result_minute < 10)
     {
         cout << 0;
