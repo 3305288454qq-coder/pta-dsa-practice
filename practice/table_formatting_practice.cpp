@@ -6,7 +6,7 @@ using namespace std;
 
 struct ProvinceData
 {
-    string province;
+    char province;
     double area;
     double population;
 };

@@ -6,7 +6,7 @@ using namespace std;
 
 struct ProvinceData
 {
-    string province;
+    char province;
     double area;
     double population;
 };
@@ -28,6 +28,7 @@ int main()
     cout << string(36, '-') << '\n';
 
     cout << fixed << setprecision(2);
+
     for (const ProvinceData &row : table)
     {
         cout << left << setw(10) << row.province
