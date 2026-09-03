@@ -38,6 +38,12 @@ When the user does not know how to continue, increase help gradually:
 
 Do not jump over these stages unless the user asks to move faster.
 
+## Lesson Pacing
+
+- Do not pause after routine variable declarations or basic `cin` input that the user has already practised.
+- For new problems, group familiar setup with the first meaningful calculation or control-flow step so the exercise remains fluid.
+- Pause at genuinely new concepts, important boundaries, or error-prone logic rather than mechanically after every small line.
+
 ## Starting a New PTA Problem
 
 - First explain what the problem asks, the input, the output, and important boundary cases.
